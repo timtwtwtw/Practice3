@@ -1,0 +1,215 @@
+/* Head */
+/* Body */
+*{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0px;
+    padding:30px 30px;
+    background-color: transparent;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 1000;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+
+.nav-links {
+    display: flex;
+    font-size: 15px;
+    transition: all .3s ease;
+    position: relative;
+    bottom: 0;
+    
+}
+
+.nav-links a{
+    margin-right: 20px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-around;
+    
+}
+
+.fa-shopping-cart{
+    font-size: 22px;
+}
+
+.nav-links1:hover{
+    bottom: 5px;
+}
+
+.menu-btn{
+    display: none;
+}
+.menu-btn div{
+    background-color: white;
+    width: 20px;
+    height: 2px;
+    margin: 4px;
+}
+
+.cards {
+    display: flex;
+    padding: 50px 50px;
+    justify-content: center;
+
+}
+
+.card-content{
+    padding-right: 20px;
+}
+
+
+/* .Website-Title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "american typewriter";
+    font-weight: 2000;
+    text-transform: uppercase;
+    text-align: center;
+} */
+/* .homepage{
+    width: 1440px;
+    padding: 0px 0px;
+    margin: 0px;
+} */
+/* 
+.index{
+    text-align: center;
+    font-family: "american typewriter";
+    font-style: italic;
+    color: black;
+    font-size: 20px;
+    justify-content: center; */
+
+/* } */
+
+header{
+    width: 100%;
+    padding: 250px ;
+    background-image: url(https://picsum.photos/id/1000/1920/1080);
+    background-size: cover;
+    /* text-align: center; */
+    color: rgb(58, 58, 58);
+    }
+
+/* .index-row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.image-1{
+    width: 100%;
+    display: block;
+    margin-left: 0px;
+}
+
+.gallery-photos{
+    width: calc(100% / 3);
+    
+}
+    
+.row{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+.index-padding{
+    padding: 75px 50px;
+    justify-content: center;
+} */
+
+/* Portfolio Section */
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+[id^='galleryImage']>.gallerytext {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(214, 123, 87);
+}
+
+#galleryImage1 {
+    background-image: url('/images/_10A4778.JPG');
+}
+
+#galleryImage2{
+    background-image: url('/images/_10A4569.JPG');
+}
+
+#galleryImage3{
+    background-image: url('/images/_10A4976.jpg');
+}
+
+#galleryImage4{
+    background-image: url('/images/_10A6230.jpg');
+}
+
+#galleryImage5{
+    background-image: url('/images/_10A6612.JPG');
+}
+
+#galleryImage6{
+    background-image: url('/images/_10A6670.jpg');
+}
+
+
+
+/* @mediaquery */
+/* css active only if window-size <=576px */
+
+@media (max-width:750px) {
+    .nav-links {
+        width: 50%;
+        
+}
+@media (max-width: 576px) {
+    header {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+
+    }
+}
+}
